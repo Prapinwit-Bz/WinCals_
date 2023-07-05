@@ -37,7 +37,7 @@ namespace WinCals
 
         private void btnDot_Click(object sender, EventArgs e)
         {
-            this.AddToDisplay(".");
+                this.AddToDisplay(".");
         }
 
         private void btnEqual_Click(object sender, EventArgs e)
@@ -69,11 +69,18 @@ namespace WinCals
         {
             this.number1 = this.number2 = this.answer = "0";
             this.txtDisplay.Text = "0";
+            //this.symbol = '0';
+            //this.dotStatus = false;
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
+            if (this.txtDisplay.Text.Length > 0)
+                this.txtDisplay.Text =
+                        this.txtDisplay.Text.Remove(this.txtDisplay.Text.Length - 1);
 
+            if((this.txtDisplay.Text.Length == 0) || (this.txtDisplay.Text ==""))
+                this.txtDisplay.Text += "0";
         }
 
         private void btn0_Click(object sender, EventArgs e)
@@ -114,6 +121,24 @@ namespace WinCals
         private void btn7_Click(object sender, EventArgs e)
         {
             this.AddToDisplay("7");
+        }
+
+        private void mnuClearItem_Click(object sender, EventArgs e)
+        {
+            this.btnClear_Click(sender, e);
+        }
+
+        private void mnuExitItem_Click(object sender, EventArgs e)
+        {
+            //this.Close();
+            Application.Exit();
+        }
+
+        private void mnuAboutItem_Click(object sender, EventArgs e)
+        {
+            frmAbout objAbout = new frmAbout();
+
+            objAbout.ShowDialog();
         }
 
         private void btn8_Click(object sender, EventArgs e)

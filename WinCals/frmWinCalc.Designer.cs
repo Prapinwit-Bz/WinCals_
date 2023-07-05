@@ -51,20 +51,20 @@
             this.btnDivide = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuClearItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuExitItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuAboutItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtDisplay
             // 
             this.txtDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDisplay.Location = new System.Drawing.Point(198, 72);
+            this.txtDisplay.Location = new System.Drawing.Point(12, 27);
             this.txtDisplay.Name = "txtDisplay";
             this.txtDisplay.ReadOnly = true;
-            this.txtDisplay.Size = new System.Drawing.Size(242, 38);
+            this.txtDisplay.Size = new System.Drawing.Size(242, 32);
             this.txtDisplay.TabIndex = 0;
             this.txtDisplay.Text = "0";
             this.txtDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -78,7 +78,7 @@
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(198, 116);
+            this.btnClear.Location = new System.Drawing.Point(12, 71);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(118, 38);
             this.btnClear.TabIndex = 2;
@@ -89,7 +89,7 @@
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(322, 116);
+            this.btnBack.Location = new System.Drawing.Point(136, 71);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(118, 38);
             this.btnBack.TabIndex = 3;
@@ -100,7 +100,7 @@
             // btn7
             // 
             this.btn7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn7.Location = new System.Drawing.Point(198, 160);
+            this.btn7.Location = new System.Drawing.Point(12, 115);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(56, 37);
             this.btn7.TabIndex = 4;
@@ -111,7 +111,7 @@
             // btn8
             // 
             this.btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn8.Location = new System.Drawing.Point(260, 160);
+            this.btn8.Location = new System.Drawing.Point(74, 115);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(56, 37);
             this.btn8.TabIndex = 5;
@@ -122,7 +122,7 @@
             // btn9
             // 
             this.btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn9.Location = new System.Drawing.Point(322, 160);
+            this.btn9.Location = new System.Drawing.Point(136, 115);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(56, 37);
             this.btn9.TabIndex = 6;
@@ -133,7 +133,7 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(384, 160);
+            this.btnAdd.Location = new System.Drawing.Point(198, 115);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(56, 37);
             this.btnAdd.TabIndex = 7;
@@ -144,7 +144,7 @@
             // btn4
             // 
             this.btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn4.Location = new System.Drawing.Point(198, 203);
+            this.btn4.Location = new System.Drawing.Point(12, 158);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(56, 37);
             this.btn4.TabIndex = 8;
@@ -155,7 +155,7 @@
             // btnone
             // 
             this.btnone.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnone.Location = new System.Drawing.Point(198, 246);
+            this.btnone.Location = new System.Drawing.Point(12, 201);
             this.btnone.Name = "btnone";
             this.btnone.Size = new System.Drawing.Size(56, 37);
             this.btnone.TabIndex = 9;
@@ -166,7 +166,7 @@
             // btn5
             // 
             this.btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn5.Location = new System.Drawing.Point(260, 203);
+            this.btn5.Location = new System.Drawing.Point(74, 158);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(56, 37);
             this.btn5.TabIndex = 10;
@@ -177,7 +177,7 @@
             // btn2
             // 
             this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.Location = new System.Drawing.Point(260, 246);
+            this.btn2.Location = new System.Drawing.Point(74, 201);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(56, 37);
             this.btn2.TabIndex = 11;
@@ -188,7 +188,7 @@
             // btn6
             // 
             this.btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn6.Location = new System.Drawing.Point(322, 203);
+            this.btn6.Location = new System.Drawing.Point(136, 158);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(56, 37);
             this.btn6.TabIndex = 12;
@@ -199,7 +199,7 @@
             // btn3
             // 
             this.btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn3.Location = new System.Drawing.Point(322, 246);
+            this.btn3.Location = new System.Drawing.Point(136, 201);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(56, 37);
             this.btn3.TabIndex = 13;
@@ -210,7 +210,7 @@
             // btnMinus
             // 
             this.btnMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMinus.Location = new System.Drawing.Point(384, 203);
+            this.btnMinus.Location = new System.Drawing.Point(198, 158);
             this.btnMinus.Name = "btnMinus";
             this.btnMinus.Size = new System.Drawing.Size(56, 37);
             this.btnMinus.TabIndex = 14;
@@ -221,7 +221,7 @@
             // btnMultiply
             // 
             this.btnMultiply.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMultiply.Location = new System.Drawing.Point(384, 246);
+            this.btnMultiply.Location = new System.Drawing.Point(198, 201);
             this.btnMultiply.Name = "btnMultiply";
             this.btnMultiply.Size = new System.Drawing.Size(56, 37);
             this.btnMultiply.TabIndex = 15;
@@ -232,7 +232,7 @@
             // btnDot
             // 
             this.btnDot.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDot.Location = new System.Drawing.Point(198, 289);
+            this.btnDot.Location = new System.Drawing.Point(12, 244);
             this.btnDot.Name = "btnDot";
             this.btnDot.Size = new System.Drawing.Size(56, 37);
             this.btnDot.TabIndex = 16;
@@ -243,7 +243,7 @@
             // btn
             // 
             this.btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn.Location = new System.Drawing.Point(260, 289);
+            this.btn.Location = new System.Drawing.Point(74, 244);
             this.btn.Name = "btn";
             this.btn.Size = new System.Drawing.Size(56, 37);
             this.btn.TabIndex = 17;
@@ -254,7 +254,7 @@
             // btnEqual
             // 
             this.btnEqual.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEqual.Location = new System.Drawing.Point(322, 289);
+            this.btnEqual.Location = new System.Drawing.Point(136, 244);
             this.btnEqual.Name = "btnEqual";
             this.btnEqual.Size = new System.Drawing.Size(56, 37);
             this.btnEqual.TabIndex = 18;
@@ -265,7 +265,7 @@
             // btnDivide
             // 
             this.btnDivide.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDivide.Location = new System.Drawing.Point(384, 289);
+            this.btnDivide.Location = new System.Drawing.Point(198, 244);
             this.btnDivide.Name = "btnDivide";
             this.btnDivide.Size = new System.Drawing.Size(56, 37);
             this.btnDivide.TabIndex = 19;
@@ -281,52 +281,55 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(272, 24);
             this.menuStrip1.TabIndex = 20;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clearToolStripMenuItem,
-            this.exitToolStripMenuItem});
+            this.mnuClearItem,
+            this.mnuExitItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 26);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
-            // clearToolStripMenuItem
+            // mnuClearItem
             // 
-            this.clearToolStripMenuItem.Name = "clearToolStripMenuItem";
-            this.clearToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
-            this.clearToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
-            this.clearToolStripMenuItem.Text = "Clear";
+            this.mnuClearItem.Name = "mnuClearItem";
+            this.mnuClearItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
+            this.mnuClearItem.Size = new System.Drawing.Size(180, 22);
+            this.mnuClearItem.Text = "Clear";
+            this.mnuClearItem.Click += new System.EventHandler(this.mnuClearItem_Click);
             // 
-            // exitToolStripMenuItem
+            // mnuExitItem
             // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
-            this.exitToolStripMenuItem.Text = "Exit";
+            this.mnuExitItem.Name = "mnuExitItem";
+            this.mnuExitItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
+            this.mnuExitItem.Size = new System.Drawing.Size(180, 22);
+            this.mnuExitItem.Text = "Exit";
+            this.mnuExitItem.Click += new System.EventHandler(this.mnuExitItem_Click);
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem});
+            this.mnuAboutItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 26);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
             // 
-            // aboutToolStripMenuItem
+            // mnuAboutItem
             // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
-            this.aboutToolStripMenuItem.Text = "About";
+            this.mnuAboutItem.Name = "mnuAboutItem";
+            this.mnuAboutItem.Size = new System.Drawing.Size(180, 22);
+            this.mnuAboutItem.Text = "About";
+            this.mnuAboutItem.Click += new System.EventHandler(this.mnuAboutItem_Click);
             // 
             // frmWinCalc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 478);
+            this.ClientSize = new System.Drawing.Size(272, 304);
             this.Controls.Add(this.btnDivide);
             this.Controls.Add(this.btnEqual);
             this.Controls.Add(this.btn);
@@ -384,10 +387,10 @@
         private System.Windows.Forms.Button btnDivide;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clearToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuClearItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuExitItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuAboutItem;
     }
 }
 
