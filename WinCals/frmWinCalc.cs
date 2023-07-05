@@ -13,6 +13,8 @@ namespace WinCals
     public partial class frmWinCalc : Form
     {
         private string number1 = "", number2 = "", answer = "";
+        private bool dotStatus = false;
+        private char sybool = '0';
 
         private void AddToDisplay(string numberSymbol)
         {
@@ -69,8 +71,8 @@ namespace WinCals
         {
             this.number1 = this.number2 = this.answer = "0";
             this.txtDisplay.Text = "0";
-            //this.symbol = '0';
-            //this.dotStatus = false;
+            this.symbol = '0';
+            this.dotStatus = false;
         }
 
         private void btnBack_Click(object sender, EventArgs e)
