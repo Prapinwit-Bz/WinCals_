@@ -14,57 +14,86 @@ namespace WinCals
     {
         private string number1 = "", number2 = "", answer = "";
         private bool dotStatus = false;
-        private char sybool = '0';
+        private char symbol = '0';
 
         private void AddToDisplay(string numberSymbol)
         {
-            if (this.txtDisplay.Text == "0")
+            if (numberSymbol == ".")
+                this.dotStatus = true;
+            // BUG
+            //if (this.txtDisplay.Text.Length >= 15)
+            // this.txtDisplay.Text = this.txtDisplay.Text;
+
+            if (this.txtDisplay.Text == "0" && numberSymbol == ".") // 0.
             {
-                if(numberSymbol == ".")
-                {
-                    this.txtDisplay.Text += numberSymbol;   
-                }
+                this.txtDisplay.Text += numberSymbol;
+            }
+            else if (this.txtDisplay.Text == "0") // 0 = 0
+            {
                 this.txtDisplay.Text = numberSymbol;
             }
-            else
+            else if (this.txtDisplay.Text != "0") // 1234
             {
                 this.txtDisplay.Text += numberSymbol;
             }
         }
-
-        public frmWinCalc()
+        private string calculating(string num1, string num2, char _symbol)
+        {
+            double numFirst = double.Parse(num1);
+            double numSecond = double.Parse(num2);
+            double numAnswer = 0.0f;
+            switch (_symbol)
+            {
+                case '+': numAnswer = numFirst + numSecond; break;
+                case '-': numAnswer = numFirst - numSecond; break;
+                case '*': numAnswer = numFirst * numSecond; break;
+                case '/': numAnswer = numFirst / numSecond; break;
+            }
+            return numAnswer.ToString();
+        }
+        private void setNumber1(char _symbol)
+    {
+        this.symbol = _symbol;
+        this.number1 = this.txtDisplay.Text;
+        this.txtDisplay.Text = "0";
+        this.dotStatus = false;
+    }
+    public frmWinCalc()
         {
             InitializeComponent();
         }
 
         private void btnDot_Click(object sender, EventArgs e)
         {
+            if (!this.dotStatus)
                 this.AddToDisplay(".");
         }
 
         private void btnEqual_Click(object sender, EventArgs e)
         {
-
+            this.number2 = this.txtDisplay.Text;
+            this.txtDisplay.Text =
+            this.calculating(this.number1, number2, this.symbol);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-
+            this.setNumber1('+');
         }
 
         private void btnMinus_Click(object sender, EventArgs e)
         {
-
+            this.setNumber1('-');
         }
 
         private void btnMultiply_Click(object sender, EventArgs e)
         {
-
+            this.setNumber1('*');
         }
 
         private void btnDivide_Click(object sender, EventArgs e)
         {
-
+            this.setNumber1('/');
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -79,9 +108,11 @@ namespace WinCals
         {
             if (this.txtDisplay.Text.Length > 0)
                 this.txtDisplay.Text =
-                        this.txtDisplay.Text.Remove(this.txtDisplay.Text.Length - 1);
+                this.txtDisplay.Text.Remove
+                (this.txtDisplay.Text.Length - 1);
 
-            if((this.txtDisplay.Text.Length == 0) || (this.txtDisplay.Text ==""))
+            if ((this.txtDisplay.Text.Length == 0) ||
+            (this.txtDisplay.Text == ""))
                 this.txtDisplay.Text += "0";
         }
 
